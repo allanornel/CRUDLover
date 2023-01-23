@@ -1,6 +1,7 @@
 package com.CRUDLover.api.dto;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public record CarDTO(
         @NotBlank String modelo,
@@ -9,7 +10,7 @@ public record CarDTO(
 
         @NotBlank String dataFabricacao,
 
-        @NotBlank double valor,
+        @NotNull double valor,
 
-        @NotBlank int anoModelo) {
+        @NotNull int anoModelo) {
 }
